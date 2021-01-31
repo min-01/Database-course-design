@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+
+<VBox fx:id="rootLayout" prefHeight="554.0" prefWidth="640.0" styleClass="green-theme" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+<!--            <MenuItem mnemonicParsing="false" text="New" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Open…" />-->
+<!--            <Menu mnemonicParsing="false" text="Open Recent" />-->
+<!--            <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Close" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Save" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Save As…" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Revert" />-->
+<!--            <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Preferences…" />-->
+<!--            <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Quit" />-->
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+<!--            <MenuItem mnemonicParsing="false" text="Undo" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Redo" />-->
+<!--            <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Cut" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Copy" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Paste" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Delete" />-->
+<!--            <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Select All" />-->
+<!--            <MenuItem mnemonicParsing="false" text="Unselect All" />-->
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="479.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="175.0" layoutY="72.0" text="学生信息管理系统" textAlignment="CENTER">
+          <font>
+            <Font name="Symbol" size="36.0" />
+          </font>
+        </Label>
+            <Button layoutX="136.0" layoutY="173.0" mnemonicParsing="false" onAction="#addmsg" prefHeight="42.0" prefWidth="136.0" styleClass="btn-color-red" text="新生录入" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="KaiTi" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button layoutX="368.0" layoutY="173.0" mnemonicParsing="false" onAction="#query" prefHeight="42.0" prefWidth="136.0" styleClass="btn-color-green" text="查询修改" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="KaiTi" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="136.0" layoutY="342.0" mnemonicParsing="false" onAction="#reward" prefHeight="45.0" prefWidth="136.0" styleClass="btn-color-yellow" text="授予奖励" textFill="WHITE">
+               <font>
+                  <Font name="KaiTi" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="252.0" layoutY="261.0" mnemonicParsing="false" onAction="#status" prefHeight="45.0" prefWidth="136.0" styleClass="btn-color-grey" text="学籍变更" textFill="WHITE">
+               <font>
+                  <Font name="KaiTi" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="368.0" layoutY="342.0" mnemonicParsing="false" onAction="#punish" prefHeight="45.0" prefWidth="136.0" styleClass="btn-color-orange" text="给予处罚" textFill="WHITE">
+               <font>
+                  <Font name="KaiTi" size="25.0" />
+               </font></Button>
+      </children>
+    </AnchorPane>
+  </children>
+    <stylesheets>
+        <URL value="@../index.css" />
+    </stylesheets>
+</VBox>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="abc" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Logincontroller">
+   <children>
+      <TextField fx:id="zhanghao" layoutX="217.0" layoutY="135.0" />
+      <Label layoutX="148.0" layoutY="140.0" text="账号" />
+      <Label layoutX="148.0" layoutY="190.0" text="密码" />
+      <Button layoutX="313.0" layoutY="266.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="117.0" text="管理员登录">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="222.0" layoutY="58.0" text="学生学籍管理系统">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="178.0" layoutY="266.0" mnemonicParsing="false" onAction="#studentlogin" prefHeight="36.0" prefWidth="117.0" text="学生登录">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="mima" layoutX="217.0" layoutY="185.0" />
+   </children>
+</AnchorPane>

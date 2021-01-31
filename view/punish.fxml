@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.rew_punController">
+    <children>
+        <TextField fx:id="punish_id" alignment="CENTER" layoutX="258.0" layoutY="106.0" prefHeight="30.0" prefWidth="150.0" promptText="输入学号" />
+        <Circle fill="#ff6f00" layoutX="108.0" layoutY="84.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+        <Label layoutX="131.0" layoutY="72.0" text="给予处罚">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="173.0" layoutY="142.0" text="处罚等级">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="punish_estate" layoutX="258.0" layoutY="142.0" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="警告" />
+                    <String fx:value="严重警告" />
+                    <String fx:value="记过" />
+                    <String fx:value="记大过" />
+                    <String fx:value="开除" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Button styleClass="btn-color-orange,btn-radius-large" fx:id="confirm" layoutX="181.0" layoutY="326.0" mnemonicParsing="false" onAction="#add_punish" prefHeight="36.0" prefWidth="218.0" text="确定" textFill="#fff4f9">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff" height="74.0" layoutX="173.0" layoutY="231.0" stroke="BLACK" strokeType="INSIDE" width="234.0" />
+        <Label fx:id="punish_name" layoutX="195.0" layoutY="260.0" />
+        <Label fx:id="punish" layoutX="244.0" layoutY="260.0" />
+        <Label layoutX="183.0" layoutY="237.0" text="处罚概览" />
+        <TextArea fx:id="pundescriptionText" layoutX="173.0" layoutY="178.0" prefHeight="36.0" prefWidth="234.0" promptText="处罚描述">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextArea>
+        <Label layoutX="173.0" layoutY="110.0" text="学号">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+    </children>
+    <stylesheets>
+        <URL value="@../index.css" />
+    </stylesheets>
+</AnchorPane>

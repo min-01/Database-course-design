@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="462.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatusController">
+   <children>
+      <Label layoutX="146.0" layoutY="94.0" text="学籍变更">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Circle fill="DODGERBLUE" layoutX="130.0" layoutY="106.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="statusField" layoutX="264.0" layoutY="147.0" prefHeight="30.0" prefWidth="149.0" promptText="学号" />
+      <Label layoutX="196.0" layoutY="152.0" text="变更者" />
+      <ChoiceBox fx:id="typechoice" layoutX="264.0" layoutY="204.0" prefWidth="150.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="转系" />
+                  <String fx:value="休学" />
+                  <String fx:value="复学" />
+                  <String fx:value="退学" />
+                  <String fx:value="毕业" />
+              </FXCollections>
+          </items>
+      </ChoiceBox>
+      <Label layoutX="196.0" layoutY="209.0" text="变更类型" />
+      <Button layoutX="226.0" layoutY="340.0" mnemonicParsing="false" onAction="#status" prefHeight="36.0" prefWidth="166.0" text="确认变更">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="descritionArea" layoutX="264.0" layoutY="258.0" prefHeight="68.0" prefWidth="178.0" />
+      <Label layoutX="196.0" layoutY="264.0" text="变更说明" />
+   </children>
+    <stylesheets>
+        <URL value="@../index.css" />
+    </stylesheets>
+</AnchorPane>
