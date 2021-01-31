@@ -12,11 +12,11 @@
 
 ​        总体设计采用JavaFX+FXML+CSS+MySQL，设计包含主登录在内总共8个界面，由主页五个按钮分别跳转至五个fxml界面，fxml界面设计使用Scene builder，每个fxml界面由对应其相应控制器操控事件，由主界面控制器程序对按钮事件调控，操控界面跳转。后端代码设计引入jdbc模块使用SQL对MySQL数据库进行操作，创建student_management数据库并建有9个数据表分别将学生各类信息存入数据表中保存，以确保其安全稳定。
 
-项目结构：![image-20210131125049414](C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131125049414.png)
+项目结构：![结构图](https://github.com/min-01/Database-course-design/blob/main/figure/structure.png)
 
 #### 数据流程图：
 
-![image-20210131130123212](C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131130123212.png)
+![流程图](https://github.com/min-01/Database-course-design/blob/main/figure/flow.png)
 
 #### 数据库需求分析
 
@@ -40,37 +40,37 @@
 
 本系统所需数据的 E-R 模型图：
 
-![image-20210131131032203](C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131131032203.png)
+![E-R模型](https://github.com/min-01/Database-course-design/blob/main/figure/E-R.png)
 
 #### 界面设计：
 
 登录界面分为学生登录和管理员登录，学生登录只能查询学生基本学籍信息和修改账号密码，学生账号固定为学号，密码初始默认学号，登录后可以修改。
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131125654543.png" alt="image-20210131125654543" style="zoom: 67%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu01.png" alt="01" style="zoom: 67%;" />
 
-![image-20210131125243992](C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131125243992.png)
+![02](https://github.com/min-01/Database-course-design/blob/main/figure/stu02.png)
 
 管理员登录后进入主页界面，CSS修饰主页
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131125512103.png" alt="image-20210131125512103" style="zoom: 80%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu03.png" alt="03" style="zoom: 80%;" />
 
 学生个人信息输入
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131131320006.png" alt="image-20210131131320006" style="zoom: 80%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu04.png" alt="04" style="zoom: 80%;" />
 
 查询修改功能
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131143210020.png" alt="image-20210131143210020" style="zoom:67%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu05.png" alt="05" style="zoom:67%;" />
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131143237326.png" alt="image-20210131143237326" style="zoom:67%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu06.png" alt="06" style="zoom:67%;" />
 
 学籍变更和奖罚
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131143458894.png" alt="image-20210131143458894" style="zoom:67%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu07.png" alt="07" style="zoom:67%;" />
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131143400656.png" alt="image-20210131143400656" style="zoom:67%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu08.png" alt="08" style="zoom:67%;" />
 
-<img src="C:\Users\28126\AppData\Roaming\Typora\typora-user-images\image-20210131143519810.png" alt="image-20210131143519810" style="zoom:67%;" />
+<img src="https://github.com/min-01/Database-course-design/blob/main/figure/stu09.png" alt="09" style="zoom:67%;" />
 
 ##### 使用说明：
 
